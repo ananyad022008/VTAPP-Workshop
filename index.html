@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ananya // Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">ANANYA<span class="cursor">_</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="terminal" id="bootTerminal"></div>
+    <span class="eyebrow">B.Tech Student &mdash; VIT-AP University</span>
+    <h1>HI, I'M<br><span>ANANYA</span></h1>
+    <p class="lead">I build things, break high scores in Fortnite and Minecraft, and rewatch the Avengers more often than I'd admit. This corner of the internet is my personal system dashboard.</p>
+    <div class="btn-row">
+      <a href="about.html" class="btn btn-solid">View Profile</a>
+      <a href="games.html" class="btn btn-outline">Play Mini-Games</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">// Quick Stats</span>
+      <h2>System Overview</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Institution</span>
+        <h3>VIT-AP University</h3>
+        <p>Currently pursuing my B.Tech, learning the stack one module at a time.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Loadout</span>
+        <h3>Fortnite &amp; Minecraft</h3>
+        <p>Building bases in one, chasing Victory Royales in the other.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Watchlist</span>
+        <h3>Avengers Marathon</h3>
+        <p>The MCU is basically background noise at this point &mdash; in the best way.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Audio Feed</span>
+        <h3>Always Playing</h3>
+        <p>There's pretty much always a playlist running somewhere in the background.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    SYSTEM STATUS: <span>ONLINE</span> &mdash; &copy; 2026 Ananya. Built with HTML, CSS &amp; JS.
+  </div>
+</footer>
+
+<!-- Workshop popup -->
+<div class="modal-overlay" id="workshopModal">
+  <div class="modal">
+    <span class="eyebrow">// Transmission Received</span>
+    <h2>Built at V-TAPP 2026</h2>
+    <p>This portfolio was created live during a web development workshop hosted for <strong>V-TAPP 2026</strong>.</p>
+    <button class="btn btn-solid" id="workshopModalClose">Acknowledge</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+  runTerminalBoot('bootTerminal', [
+    '> initializing profile...',
+    '> user: ananya',
+    '> institution: vit-ap university',
+    '> status: online'
+  ]);
+  initWorkshopPopup();
+</script>
+</body>
+</html>

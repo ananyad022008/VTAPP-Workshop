@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact // Ananya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">ANANYA<span class="cursor">_</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 2.5rem;">
+  <div class="wrap">
+    <span class="eyebrow">// Uplink</span>
+    <h1>Get In <span>Touch</span></h1>
+    <p class="lead">Drop a message below. This form is front-end only for now, so nothing gets sent yet &mdash; but it'll show you what a submission would look like.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <form class="terminal-form" id="contactForm">
+      <div>
+        <label for="cName">Name</label>
+        <input type="text" id="cName" name="name" placeholder="Your name" required>
+      </div>
+      <div>
+        <label for="cEmail">Email</label>
+        <input type="email" id="cEmail" name="email" placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label for="cMessage">Message</label>
+        <textarea id="cMessage" name="message" rows="5" placeholder="Type your message..." required></textarea>
+      </div>
+      <button class="btn btn-solid" type="submit" style="align-self: flex-start;">Send Transmission</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+
+    <div class="social-row">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    SYSTEM STATUS: <span>ONLINE</span> &mdash; &copy; 2026 Ananya. Built with HTML, CSS &amp; JS.
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('formStatus').textContent = '> message transmitted. thanks for reaching out!';
+    this.reset();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games // Ananya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">ANANYA<span class="cursor">_</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 2.5rem;">
+  <div class="wrap">
+    <span class="eyebrow">// Arcade</span>
+    <h1>Mini <span>Games</span></h1>
+    <p class="lead">A couple of built-from-scratch games to mess around with while you're here.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+
+    <div class="game-panel">
+      <h3><span class="tag">01</span> Reflex Test</h3>
+      <p style="color: var(--gray); margin-top: 0.5rem;">Wait for the box to turn orange, then click as fast as you can. Click too early and you'll jump the gun.</p>
+      <div class="reflex-box idle" id="reflexBox">Click to Start</div>
+      <div class="reflex-result" id="reflexResult">Best time this session: &mdash;</div>
+    </div>
+
+    <div class="game-panel">
+      <h3><span class="tag">02</span> Memory Grid</h3>
+      <p style="color: var(--gray); margin-top: 0.5rem;">Flip two tiles at a time and find every matching pair.</p>
+      <div class="memory-stats">
+        <div>Moves: <span id="memMoves">0</span></div>
+        <div>Pairs: <span id="memPairs">0</span> / 8</div>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="btn-row">
+        <button class="btn btn-outline" id="memoryReset" type="button">Reset Grid</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    SYSTEM STATUS: <span>ONLINE</span> &mdash; &copy; 2026 Ananya. Built with HTML, CSS &amp; JS.
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="games.js"></script>
+</body>
+</html>
